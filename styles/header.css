@@ -1,0 +1,34 @@
+
+nav{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px;
+    align-items: center;
+    width: 100%;
+}
+
+nav img{
+    margin-top: 8px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding: 8px 16px;
+    gap: 4px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-mediterranean-deep, #000E59);
+}
+
+@media (max-width: 900px) {
+    nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+}

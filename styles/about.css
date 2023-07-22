@@ -1,0 +1,54 @@
+header{
+    width: 95%;
+    margin: 0 auto;
+}
+
+section{
+    display: flex;
+    width: 95%;
+    padding: 32px;
+    gap: 32px;
+    margin: 16px auto 80px auto;
+    justify-content: flex-start;
+}
+
+section img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 32px;
+}
+
+h2{
+    color: #000E59;
+    margin-bottom: 24px;
+}
+
+p{
+    margin-bottom: 16px;
+}
+
+@media (max-width: 900px) {
+    body{
+        overflow-x: hidden;
+    }
+
+
+    main{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    section{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,186 @@
+
+
+header{
+    min-height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+}
+
+main{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h2{
+    margin-bottom: 24px;
+}
+
+.hero{
+    margin: 1em 0 2em 0;
+    padding: 80px 64px;
+    border-radius: 32px;
+    background-color: #0166FF;
+    background-image: url("../assets/images/pattern-vega.svg");
+    color: #FFFCFF;
+    justify-content: space-between;
+    gap: 2em;
+    min-height: 60vh;
+}
+
+.hero p{
+    max-width: 900px;
+}
+
+.projects-section{
+    margin: 0 0 2em 0;
+    width: 100%;
+    padding: 24px 24px 8px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 32px;
+    background: linear-gradient(222deg, #141414 0%, #000E59 100%);
+    flex-wrap: wrap;
+}
+
+
+.lower-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.project{
+    height: 684px;
+    min-height: 70vh;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    transition: .5s;
+}
+
+
+.project:hover{
+    scale: 0.99;
+    box-shadow: 0px 0px 8px 3px rgba(1, 102, 255, 0.20);
+}
+
+.project a{
+    text-decoration: none;
+    color: var(--color-shell-white, #FFFCFF);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+.project-main{
+    min-width: 60%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 34.38%, #000 100%), url("../assets/images/pattern-vega.svg"), lightgray 50% / cover no-repeat;
+    flex-wrap: wrap;
+}
+
+.project-small{
+    max-width: 40%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 34.38%, #000 100%), url("../assets/images/pattern-vega.svg"), lightgray 50% / cover no-repeat;
+    flex-wrap: wrap;
+}
+
+
+.project img{
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: var(--border-radius-border-radius-xs, 8px);
+    border: 1px solid var(--color-shell-white, #FFFCFF);
+    margin-bottom: 0.5em;
+    background: var(--color-volcano-sand, #141414);
+    
+}
+
+.project-row{
+    display: flex;
+    gap: 16px;
+    min-height: 70vh;
+}
+
+.project-title{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    color: var(--color-shell-white, #FFFCFF);
+}
+
+.project-title h3{
+    width: 70%;
+    padding-bottom: 0.5em;
+}
+
+
+
+@media (max-width: 900px) {
+    
+    header{
+        min-height: 0;
+        height: auto;
+        margin-bottom: 32px;
+    }
+    
+    main{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .hero{
+        width: 90%;
+        padding: 32px 24px;
+        margin: 0 auto;
+        justify-content: inherit;
+        min-height: auto;
+        border-radius: 24px;
+    }
+
+    .projects-section{
+        max-width: 95%;
+        padding: 16px 16px 0px 16px;
+        border-radius: 24px;
+    }
+
+    .project-title img{
+        display: none;
+    }
+
+    .project-row{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        gap: 0;
+    }
+
+    .project{
+        max-width: none;
+        width: 100%;
+        display: flex;
+        height: 400px;
+    }
+
+    .project-small{
+        width: 100%;
+    }
+}
