@@ -149,7 +149,7 @@ h2{
     }
 
     .hero{
-        width: 90%;
+        width: auto;
         padding: 32px 24px;
         margin: 0 auto;
         justify-content: inherit;

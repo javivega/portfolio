@@ -38,7 +38,7 @@ footer a{
     footer{
         justify-content: center;
         flex-direction: column-reverse;
-        width: 100%;
+        width: auto;
         padding: 16px;
     }
 
