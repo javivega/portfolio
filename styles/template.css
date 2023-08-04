@@ -8,6 +8,9 @@ main{
     width: 100%;
 }
 
+/* img{
+    object-fit: fill;
+} */
 
 .project-header{
     height: 100vh;
@@ -92,6 +95,7 @@ main{
 
 .project-section img{
     width: 100%;
+    object-fit: fill;
 }
 
 .project-section-full{
@@ -142,7 +146,6 @@ main{
 
 /* borrar color*/
 .horizontal-scrolling img{
-
     max-height: 400px;
     object-fit: cover;
     border-radius: 16px;
@@ -160,11 +163,16 @@ main{
 }
 
 .project-section img{
-    max-height: 600px;
+    display: block;
+    margin: 0 auto 16px auto;
+    max-height: 696px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 
     border-radius: 8px;
     margin-bottom: 16px;
-    object-fit: cover;
+    object-fit: fill;
     object-position: center;
 }
 
@@ -178,6 +186,10 @@ main{
     max-width: 60%;
     display: flex;
     flex-direction: column;
+}
+
+.text-only-container img{
+    object-fit: fill;
 }
 
 .text-image{
@@ -197,10 +209,30 @@ main{
 }
 
 .image-row img{
-    max-width: 32%;
+    max-width: 50%;
     object-fit: contain;
 }
 
+.points{
+    display: flex;
+    gap: 32px;
+}
+
+.points div{
+    width: 25%;
+}
+
+.points img{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.points p{
+    height: auto;
+    color: #000E59;
+}
 
 @media (max-width: 900px) {
 
@@ -262,14 +294,15 @@ main{
     .image-row{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         justify-content: center;
+        align-items: center;
         gap: 8px;
         margin-bottom: 8px;
     }
 
     .image-row img{
-        max-width: 100%;
+        max-width: 90vw;
         margin-bottom: 16px;
     }
 
@@ -279,6 +312,10 @@ main{
 
     .horizontal-scrolling {
         padding: 8px 16px;
+    }
+
+    .horizontal-scrolling img{
+        max-width: 87vw;
     }
 
     .text-only-container-full h2{
@@ -292,6 +329,23 @@ main{
 
     img{
         margin-top: 16px;
+    }
+
+    .points{
+        display: block;
+        width: 100%;
+    }
+    
+    .points div{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .points img{
+        max-height: 696px;
+        display: block;
+        width: auto;
+        margin: 0 auto;
     }
 
 }

@@ -14,7 +14,14 @@ body{
     line-height: normal;
     letter-spacing: -0.4px;
     overflow-x: hidden;
+}
 
+h3{
+  font-size: 32px;
+  font-family: Montserrat;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.4px;
 }
 
 .flex-column{

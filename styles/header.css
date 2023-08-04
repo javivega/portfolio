@@ -1,11 +1,12 @@
 
 nav{
     height: 40px;
+    width: 96%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 16px 16px;
     align-items: center;
-    width: 100%;
 }
 
 nav img{
@@ -22,8 +23,21 @@ nav li{
 }
 
 nav a{
-    text-decoration: none;
+    text-decoration: underline solid 2px #000d5900;
     color: var(--color-mediterranean-deep, #000E59);
+    transition: 800ms;
+}
+
+nav a:hover{
+    text-decoration: underline solid 2px #000E59;
+    text-shadow: #000E59;
+}
+
+.sticky-top{
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+    mix-blend-mode: multiply;
 }
 
 @media (max-width: 900px) {
