@@ -87,6 +87,7 @@ h2{
     opacity: 0;
 }
 
+
 .project-main{
     min-width: 60%;
     width: 100%;
@@ -111,6 +112,7 @@ h2{
     background: var(--color-volcano-sand, #141414);
     
 }
+
 
 .project-row{
     display: flex;

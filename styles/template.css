@@ -8,6 +8,7 @@ main{
     width: 100%;
 }
 
+
 /* img{
     object-fit: fill;
 } */
@@ -86,7 +87,7 @@ main{
 
 .project-section h2{
     color: var(--color-mediterranean-deep, #000E59);
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .project-section p{
@@ -106,7 +107,7 @@ main{
 
 .project-section-full h2{
     color: var(--color-mediterranean-deep, #000E59);
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .project-section-full p{
@@ -215,11 +216,16 @@ main{
 
 .points{
     display: flex;
-    gap: 32px;
+    gap: 24px;
+    justify-content: center;
 }
 
 .points div{
     width: 25%;
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 16px;
+    background-color: #f0f0f0;
 }
 
 .points img{
@@ -233,6 +239,18 @@ main{
     height: auto;
     color: #000E59;
 }
+
+.points h3{
+    color: #000E59;
+}
+
+/* .image-only{
+    width: 20%;
+    border-radius: 16px;
+    object-fit: cover;
+    max-height: 800px;
+    height: auto;
+} */
 
 @media (max-width: 900px) {
 
@@ -347,5 +365,7 @@ main{
         width: auto;
         margin: 0 auto;
     }
+
+
 
 }

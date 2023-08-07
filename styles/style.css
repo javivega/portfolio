@@ -70,6 +70,17 @@ h3{
     
 }
 
+.chip-full{
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-border-radius-2-xs, 4px);
+  border: 2px solid var(--color-shell-white, #FFFCFF);
+  color: var(--color-shell-white, #000E59);
+  background-color: #FFFCFF;
+  margin: 0 auto;
+}
+
 .button-icon-right{
     display: flex;
     gap: var(--spacing-spacing-3-xs, 8px);
